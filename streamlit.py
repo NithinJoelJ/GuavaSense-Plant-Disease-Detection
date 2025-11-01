@@ -260,7 +260,7 @@ with col_right:
     if uploaded_file:
         try:
             img = Image.open(uploaded_file)
-            st.image(img, use_container_width=False, width=320)
+            st.image(img)
         except Exception as e:
             st.error(f"Cannot display uploaded image: {e}")
     else:
